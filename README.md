@@ -23,4 +23,12 @@ This project consists of four parts:
 </ol>
 
 <h2> Requirements and Interactions with the Project</h2>
-The project requires standard libraries. The crawling-step uses especially <em>requests</em>, and <em>BeautifulSoup</em> to perform the crawling and to parse the data from the HTML code. Moreover, we use <em>pandas</em> to store the data and some additional libraries like <em>os</em>, <em>time</em>, <em>json</em> and <em>urllib</em>.
+This project is structured into three folders: <em>code</em>, <em>data</em> and <em>models</em>. The folder <em>code</em> contains four notebooks: <em>crawling_data.ipynb</em>, <em>feature_engineering.ipynb</em>, <em>model_building.ipynb</em>, and <em>evaluation_model.ipynb</em>. The folder data contains four Excel files: The files <em>matches_euro_2020.xlsx</em> and <em>matches_training_ml.xlsx</em> stem from the crawling step and contain the results of the Euro 2020 and the matches with the features played before the tournament. In the feature engineering step the Excel files <em>20210825_features_matches_training.xlsx</em> and <em>20210825_features_last_match.xlsx</em> are generated. These files serve as base for training the model and for predicting the matches in Euro 2020. The models generated in the model building step are stored in the folder models. In this project we use the model <em>model.pkl</em>.
+
+The project requires only standard libraries:
+<ol>
+  <li> The crawling step especially uses <em>requests</em>, and <em>BeautifulSoup</em> to perform the crawling and to parse the data from the HTML code. Moreover, we use                  <em>pandas</em> to store the data and some additional libraries like <em>os</em>, <em>time</em>, <em>json</em> and <em>urllib</em>.</li>
+  <li> The feature engineering relies mostly on <em>pandas</em>.</li>
+  <li> The model building step is based on <em>sklearn</em> and the model is stored using <em>pickle</em>.</li>
+  <li> The model evaluation uses <em>random</em> to simulate the games.</li>
+</ol>
