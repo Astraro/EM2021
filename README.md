@@ -3,6 +3,8 @@
 <h2> Introduction </h2>
 This project is my on the capstone project of Udacity's Data Scientist NanoDegree Programme.
 
+The corresponding blog post could be found here https://astraro.github.io/euro2020/.
+
 The goal of this project is to investigate if a machine learning algorithm can help me to perform better in a soccer betting game w.r.t. the UEFA Euro 2020. The betting game took place on the platform www.kicktipp.de and the contestants were my workmates.
 
 In the betting game we have to make two kinds of bets:
